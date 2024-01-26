@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liga Magic</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Esta sessão mostra o card -->
+    <section class="left">
+      <img src="./assets/card-g.png" alt="Card magic" width="350">
+      <hr />
+      <div class="carrossel">
+        <button class="btn-card-carrossel">
+          <img src="./assets/left-arrow.svg" alt="">
+        </button>
+
+        <div class="cards-container">
+          <img src="./assets/Card_Carroussel-1.png" alt="">
+          <img src="./assets/Card_Carroussel.png" alt="">
+          <img src="assets/Card_Carroussel-2.png" alt="">
+        </div>
+
+        <button class="btn-card-carrossel">
+          <img src="./assets/right-arrow.svg" alt="">
+        </button>
+      </div>
+    </section>
+
+    <!-- Esta sessão mostra as informações e valores -->
+    <section class="right">
+      <div class="card-info">
+        <ul class="breadcrumb">
+          <li>Home</li>
+          <li>Magic: The Gathering</li>
+          <li>Busca</li>
+          <li>Bazar - Lista de Desejos</li>
+        </ul>
+
+        <div class="select-edition">
+          <div class="label-select">
+            <img src="./assets/card-icon.svg" alt="">
+            <p class="card-number">#045</p>
+            <p class="card-name">Dominaria Remastered</p>
+            <p class="sigla">DMR</p>
+            <button>
+              <img src="./assets/down-arrow.svg" alt="">
+            </button>
+          </div>
+        </div>
+
+        <div class="title">
+          <div class="texts">
+            <h2>Contramágica</h2>
+            <span>Counterspell</span>
+          </div>
+
+          <div class="icon-buttons">
+            <button id="favorite">
+              <img src="./assets/heart.svg" alt="">
+            </button>
+            <button id="options">
+              <img src="./assets/dots.svg" alt="">
+            </button>
+          </div>
+        </div>
+
+        <div class="shopping-list">
+          <div class="header-shopping-list">
+            <div id="text">
+              <h2>Lista de compras</h2>
+              <img src="./assets/help-icon.svg" alt="">
+            </div>
+            <span>Add a carta aqui e deixe que a Liga calcule o melhor preço para você!</span>
+          </div>
+
+          <div class="counter-filter">
+            <div class="counter-input">
+              <button class="button-counter decrement" onclick="changeValue(1)">
+                <img src="./assets/plus-icon.svg" alt="">
+              </button>
+              <input type="number" id="numberInput" value="1">
+              <button class="button-counter increment" onclick="changeValue(-1)">
+                <img src="./assets/minus-icon.svg" alt="">
+              </button>
+            </div>
+
+            <div class="button-filter">
+              <button id="button-filter">
+                <img src="./assets/filter-icon.svg" alt="">
+              </button>
+            </div>
+
+            <button id="add-list">
+              <img src="./assets/plus-icon-fill.svg" alt="">
+              ADCIONAR NA LISTA
+            </button>
+          </div>
+        </div>
+
+        <div class="card-chart">
+          <div class="card-details">
+            <div class="title">
+              <span>Detalhes da carta</span>
+              <a href="#">Ver Tudo</a>
+            </div>
+            <div class="table-chart">
+              <ul class="table-container">
+                <li class="item">Cor <b class="azul">Azul</b></li>
+                <li class="item">Custo de mana <span>
+                    <img src="./assets/drop-icon.svg" alt="">
+                    <img src="./assets/drop-icon.svg" alt="">
+                  </span>
+                </li>
+                <li class="item">Tipo <b>Mágica Instantânea</b></li>
+              </ul>
+            </div>
+          </div>
+          <div class="marketplace-price">
+            <div class="card-details">
+              <div class="title">
+                <span>Preço Médio no Marketplace </span>
+                <a href="#">Ver Tudo</a>
+              </div>
+              <div class="marketplace-item">
+                <p class="tipo">
+                  <img src="./assets/normal-icon.svg" alt="">
+                  Normal
+                </p>
+                <div class="prices">
+                  <span class="menor" data-unit-price="6.28">R$ 6,28</span>
+                  <span class="medio" data-unit-price="9.39">R$ 9,39</span>
+                  <span class="maior" data-unit-price="14.00">R$ 14,00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+@import '_reset.css';
+@import '_colors.css';
+@import '_container.css';
+@import '_left.css';
+@import '_right.css';
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ECECEA;
+}

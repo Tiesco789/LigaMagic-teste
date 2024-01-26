@@ -1,0 +1,351 @@
+:root {
+  --breadcrumb: #9B9B98;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  color: var(--breadcrumb);
+  margin-top: 32px;
+  margin-left: 64px;
+}
+
+.right .card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Estilização do Breadcrumb */
+.right .card-info ul.breadcrumb {
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.right .card-info ul.breadcrumb li {
+  display: inline;
+  font-size: 14px;
+}
+
+/* adiciona o simbolo | atrás de cada item da lsita */
+.right .card-info ul.breadcrumb li+li:before {
+  padding: 0 8px 0 8px;
+  color: var(--breadcrumb);
+  content: "|";
+  border-radius: 0.2px;
+  height: 4px;
+}
+
+/* Estilizaçào da seleção de edição */
+.select-edition {
+  padding: 12px;
+  border: 1px solid #ECECEA;
+  border-radius: 1px;
+  background-color: #F4F4F2;
+  box-shadow: 0px 4px 8px 0px #04050C1A;
+  margin-bottom: 24px;
+}
+
+.select-edition .label-select {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-edition .label-select {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.select-edition .label-select .card-number {
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+
+.select-edition .label-select .card-name {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 520px;
+  color: black;
+}
+
+.select-edition .label-select .sigla {
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  border-left: 2px solid #CECECE;
+  padding-left: 8px;
+}
+
+.select-edition .label-select button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  background-color: transparent;
+}
+
+/* Estilização dos titulos e cabeçalho do lado direito no qual contem informações das carta e compra*/
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.title .texts {
+  color: black;
+}
+
+.title .texts span {
+  font-style: italic;
+  color: #727270;
+}
+
+.title .icon-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: start;
+  margin-top: 4px;
+}
+
+.title .icon-buttons button {
+  border: none;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+.title .icon-buttons #favorite {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.title .icon-buttons #options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ECECEA;
+  border: 0.8px solid #CECECE;
+  border-radius: 0.6px;
+  padding: 4px;
+}
+
+.shopping-list {
+  background-color: #ECECEA;
+  padding: 14px 20px 18px 20px;
+  border-radius: 1px;
+  width: 100%;
+  box-shadow: 0px 4px 8px 0px #04050C1A;
+  margin-bottom: 24px;
+}
+
+.shopping-list .header-shopping-list {
+  margin-bottom: 16px;
+}
+
+.shopping-list .header-shopping-list #text {
+  display: flex;
+  align-items: center;
+}
+
+.shopping-list .header-shopping-list #text h2 {
+  color: #474745;
+  margin-right: 8px;
+}
+
+.shopping-list .header-shopping-list span {
+  color: #474745;
+}
+
+/* Estilização do container que incrmenta ou decrementa valores */
+.shopping-list .counter-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #CECECE;
+  border-radius: 1px;
+  background-color: #F4F4F2;
+  width: fit-content;
+  margin-right: 8px;
+}
+
+.shopping-list .counter-input input::-webkit-outer-spin-button,
+.shopping-list .counter-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.shopping-list .counter-input input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.shopping-list .counter-filter .counter-input input {
+  text-align: center;
+  border-radius: 4px;
+  padding: 9px 4px 9px 4px;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  width: 56px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.shopping-list .counter-filter .counter-input button {
+  cursor: pointer;
+  margin: 0 4px 0 4px;
+  padding: 0;
+  display: flex;
+  background-color: transparent;
+
+}
+
+.shopping-list .counter-filter {
+  display: flex;
+  align-items: center;
+}
+
+.shopping-list .counter-filter .button-filter {
+  margin-right: 24px;
+}
+
+.shopping-list .counter-filter #button-filter {
+  width: fit-content;
+  display: flex;
+  box-shadow: 0px 4px 8px 0px #04050C1A;
+  padding: 4px;
+  border: 0.8px solid #CECECE;
+  background-color: #ECECEA;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+.shopping-list #add-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #127119;
+  padding: 8px 12px 8px 12px;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px 0px #04050C1A;
+  border-radius: 1px;
+}
+
+/* Estilos da lista de detalhes da carta */
+.card-chart {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.card-chart .card-details .title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.card-chart .card-details .title span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #04050C;
+  margin-left: 20px;
+}
+
+.card-chart .card-details .title a {
+  padding: 4px 8px 4px 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FF5921;
+  text-decoration: none;
+}
+
+.card-chart .card-details .table-chart .table-container .item {
+  background-color: #ECECEA;
+  color: #727270;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.card-chart .card-details .table-chart .table-container .item .azul {
+  color: #0085FF;
+}
+
+.card-chart .card-details .table-chart .table-container .item b {
+  color: #474745;
+}
+
+.card-chart .marketplace-price {
+  margin-top: 24px;
+}
+
+.card-chart .marketplace-price .title span {
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  gap: 4px;
+}
+
+.card-chart .marketplace-price .marketplace-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ECECEA;
+  color: #727270;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.card-chart .marketplace-price .marketplace-item .tipo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-chart .marketplace-price .marketplace-item .prices {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+
+.card-chart .marketplace-price .marketplace-item .prices .menor {
+  border-left: 4px #69BC40 solid;
+  padding-left: 8px;
+}
+
+.card-chart .marketplace-price .marketplace-item .prices .medio {
+  border-left: 4px #DDC80B solid;
+  padding-left: 8px;
+}
+
+.card-chart .marketplace-price .marketplace-item .prices .maior {
+  border-left: 4px #FF8B64 solid;
+  padding-left: 8px;
+}
